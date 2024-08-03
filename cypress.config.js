@@ -5,9 +5,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-  },
-  env: {
-    "baseUrl": "www.europarfemy.cz",
-    "chromeWebSecurity": false
+    baseUrl: "https://www.dm.cz/"
   }
 });
