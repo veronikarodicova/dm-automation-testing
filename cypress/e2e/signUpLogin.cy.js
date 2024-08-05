@@ -47,8 +47,6 @@ describe('Sing up and login', () => { // TODO ne DM
 
     cy.getByData('submitButton')
       .click()
-
-
   })
 
   it('shows error if registration form filled out incorrectly', () => {
@@ -70,14 +68,10 @@ describe('Sing up and login', () => { // TODO ne DM
       'Zadejte, prosím, Vaše příjmení.',
       'Zadejte platnou e-mailovou adresu.',
       'Zadejte, prosím, Vaše heslo.',
-
     ]).each((errorText) => {
         cy.getByData('dm-form')
           .should('contain', errorText)
-
       })
-
-    
   })
 
   it('login', () => {

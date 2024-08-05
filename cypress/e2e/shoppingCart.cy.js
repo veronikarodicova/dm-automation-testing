@@ -37,8 +37,6 @@ describe('Shopping cart', () => {
                     .getByData('dm-box')
                     .contains(price.text())
                     .should('be.visible')
-                    
-
             })
     })
 })
