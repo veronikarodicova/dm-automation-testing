@@ -1,4 +1,4 @@
-describe('Sing up and login', () => { // TODO ne DM
+describe('Sing up and login', () => { 
   beforeEach(() => {
     cy.visit('/') 
   })
