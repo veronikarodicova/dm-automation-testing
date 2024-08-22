@@ -20,7 +20,17 @@
     context('Check API Endpoints Accessibility', () => {
       const endpoints = [
         'https://dm.cz/',
-        'https://dm.cz/znacky'
+        'https://dm.cz/znacky',
+        'https://dm.cz/dekorativni-kosmetika',
+        'https://dm.cz/pece-o-plet-a-telo',
+        'https://www.dm.cz/panska-kosmetika',
+        'https://www.dm.cz/vlasova-kosmetika',
+        'https://www.dm.cz/pece-o-zdravi',
+        'https://www.dm.cz/vyziva',
+        'https://www.dm.cz/pece-o-dite',
+        'https://www.dm.cz/domacnost',
+        'https://www.dm.cz/foto',
+        'https://www.dm.cz/zvirata',
       ];
   
       endpoints.forEach((url) => {
