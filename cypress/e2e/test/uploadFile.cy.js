@@ -19,6 +19,7 @@ describe('Google upload file', () => {
     
 
         cy.get('div[aria-label="Vyhledávání pomocí obrázku"]')
+            .and('div[aria-label=""Search by image"]')
             .click()
 
         cy.get('input[type="file"][name="encoded_image"]')
