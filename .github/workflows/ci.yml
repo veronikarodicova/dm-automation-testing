@@ -6,6 +6,9 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
+    env:
+      LANG: cs_CZ.UTF-8
+      LC_ALL: cs_CZ.UTF-8
     steps:
       - name: Checkout
         uses: actions/checkout@v4
