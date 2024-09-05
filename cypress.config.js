@@ -10,6 +10,13 @@ module.exports = defineConfig({
           return null;
         },
       });
+
+      on('before:browser:launch', (browser = {}, launchOptions) => {
+        if (browser.name === 'chrome') {
+          launchOptions.args.push('--lang=cs')
+        }
+        return launchOptions
+      })
     },
     baseUrl: "https://www.dm.cz/"
   },

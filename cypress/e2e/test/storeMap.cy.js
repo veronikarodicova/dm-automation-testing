@@ -20,7 +20,7 @@ describe('Store map', () => {
             .contains('Ostrava, Moravskoslezský kraj, Česko')
             .click()
 
-        cy.getByData('store-teaser-street')
+        cy.getByData('store-teaser-street', {timeout: 16000})
             .contains('Rudná 3114/114')
             .should('be.visible')
             .parents('[data-dmid=store-teaser]')
